@@ -8,7 +8,7 @@ use XML::LibXML;
 
 BEGIN{
   require Exporter;
-  our $VERSION = '1.0';
+  our $VERSION = '1.01';
   our $AUTOLOAD;
   our @ISA = qw(Exporter);
   our @EXPORT_OK = qw(init validate get_error_msg 
@@ -112,7 +112,7 @@ sub init{
   my $fname = 'init';
 
   if(!defined($xsdFilename) or $xsdFilename eq ""){
-    $xsdFilename = $default_xsd_locaiton;
+    $xsdFilename = $default_xsd_location;
   }
 
   $parser = XML::LibXML::->new();

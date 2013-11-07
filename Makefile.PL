@@ -7,7 +7,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME              => 'BGPmon',
-    VERSION_FROM      => 'lib/BGPmon/Validate.pm', # finds $VERSION
+    VERSION_FROM      => 'VERSION', # finds $VERSION
 #    EXE_FILES         => [''],
     PREREQ_PM         => {'Test'        => 0,
                           'XML::LibXML' => 0,
